@@ -4,12 +4,12 @@ const app = express()
 
 let expressjs = require('express');
 
-let app1 = expressjs();  // Compliant
-app1.disable("x-powered-by");
+let app = expressjs();  // Compliant
+app.disable("x-powered-by");
 
 let helmet = require("helmet");
-let app2 = expressjs(); // Compliant
-app2.use(helmet.hidePoweredBy());
+let app = expressjs(); // Compliant
+app.use(helmet.hidePoweredBy());
 
 
 const path = require('path')
