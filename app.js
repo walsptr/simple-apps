@@ -2,14 +2,10 @@ const express = require('express')
 const mysql = require('mysql');
 const app = express()
 
-let expressjs = require('express');
+let express= require('express');
 
-let app1 = expressjs();  // Compliant
-app1.disable("x-powered-by");
-
-let helmet = require("helmet");
-let app2 = expressjs(); // Compliant
-app2.use(helmet.hidePoweredBy());
+let app = express();  // Compliant
+app.disable("x-powered-by");
 
 
 const path = require('path')
