@@ -2,9 +2,6 @@ const express = require('express')
 const mysql = require('mysql');
 const app = express()
 
-let express= require('express');
-
-let app = express();  // Compliant
 app.disable("x-powered-by");
 
 
